@@ -5,6 +5,17 @@ cache:
   yarn: true
   directories:
     - node_modules
+before_deploy:
+  - cd dist
 script:
   - yarn test:ci
   - yarn build
+deploy:
+  provider: npm
+  email: malcolm.keeweesiong@gmail.com
+  api_key:
+    secure: qj89o4I6hb8JbcBUHom2xnCyxIJ1BA0gNY6XgTuA9nWMcKx/hKIWXkVYo5d9mYhoR9PPh7ce/4euPaqCqMCnLuO1j1xUsLfx39xoePwjW44Xpup4ndlS5D2oviIyouQXgCN0Lh78iRf5Q3pex1Dia3OM/pU4pebWD9tPNKBn2oTBZeRcN/lbv5/JvFgcp3z7UbT91JfQ7W4Bt/9npm5f6Y6Wz5vKxAYzykROEAvU6n2gZJ2Z3qRV/DkfNe9WWXhMn+lI/7pxbkbdt6OEU0q1uHnDzvm2gwcPNZnotsJJrxDNutGJba1TmqhSUSwfGzRuv3/4yb30R3NqdNvyUGlCbxQ7D9tOTo+hFw3WvPNqhEK//xmtf0UNv9Gl0PovSd1mrsyDVd6xEQThTqxwjxyb3l4roftad4/B9TIsGLVEV5K/dwD1eRHA4pZkev3RIO4zRkUsDlS8bA1+EIq20xYRKxPDT4pMYkRqs95/s4qYgn4LEh+Mh4RnscnrZkTAUbI7/hyoIR9JKAuNR5a5tiR4TkGX00LMB5VNwmPQMWOuZZiwIA2DsOgFtSciAZxRHxgf15uIkakC1LTRmzhPaSGfYA06HeoPh/yTDFkBgXKDmcbSYCb/hq5Osrfo86VCBa6167ljJHqtQaQryd+Z0S3pDgPlbGzL4+mhvJ0Kj9aI4ek=
+  on:
+    tags: true
+    branch: master
+  skip_cleanup: true
