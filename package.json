@@ -1,6 +1,6 @@
 {
   "name": "typesafe-is",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "check the type of a value with typescript typeguard",
   "main": "index.js",
   "scripts": {
