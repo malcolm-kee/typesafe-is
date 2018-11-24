@@ -1,8 +1,13 @@
 {
   "name": "typesafe-is",
-  "version": "1.0.0",
-  "description": "check the type of a value with typescript typeguard",
+  "version": "1.0.1",
+  "description": "Check the type of a value with typescript typeguard",
   "main": "index.js",
+  "keywords": [
+    "typescript",
+    "typecheck",
+    "type guard"
+  ],
   "scripts": {
     "test": "jest",
     "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
