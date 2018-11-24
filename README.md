@@ -69,3 +69,6 @@ Check if the value is a `function`.
 ### `isArray`
 
 Check if the value is an `Array`.
+
+[npm]: https://www.npmjs.com/
+[node]: https://nodejs.org
