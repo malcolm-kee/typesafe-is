@@ -1,12 +1,12 @@
 {
   "name": "typesafe-is",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "check the type of a value with typescript typeguard",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf dist",
-    "copy": "copy package.json dist",
+    "copy": "copy package.json dist && copy README.md dist",
     "compile": "tsc --p tsconfig.json",
     "build": "npm run compile && npm run copy"
   },
