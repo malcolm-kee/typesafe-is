@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "prebuild": "rimraf dist",
     "copy": "copy package.json dist && copy README.md dist",
     "compile": "tsc --p tsconfig.json",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.9",
     "copy": "^0.3.2",
+    "coveralls": "^3.0.2",
     "jest": "^23.6.0",
     "prettier": "^1.15.2",
     "rimraf": "^2.6.2",
@@ -45,9 +47,6 @@
     ],
     "collectCoverageFrom": [
       "src/**/*.ts"
-    ],
-    "coverageReporters": [
-      "text-summary"
     ]
   }
 }
