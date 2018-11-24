@@ -1,6 +1,6 @@
 # typesafe-is
 
-[![version](https://img.shields.io/npm/v/typesafe-is.svg)](https://www.npmjs.com/package/typesafe-is) ![license](https://img.shields.io/npm/l/typesafe-is.svg)
+[![version](https://img.shields.io/npm/v/typesafe-is.svg)](https://www.npmjs.com/package/typesafe-is) ![license](https://img.shields.io/npm/l/typesafe-is.svg) ![build](https://travis-ci.org/malcolm-kee/typesafe-is.svg?branch=master)
 
 <p align="center" style="font-size:1.2rem">Typecheck while typeguard to narrow down the variables/parameters</p>
 
