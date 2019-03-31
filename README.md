@@ -46,6 +46,10 @@ import { isNil } from 'typesafe-is'; // this works
 import isNil from 'typesafe-is/isNil'; // this works too!
 ```
 
+### `isDefined`
+
+Check if the value is **not** `undefined`.
+
 ### `isNil`
 
 Check if the value is `undefined` or `null`.
