@@ -27,14 +27,14 @@
   },
   "homepage": "https://github.com/malcolm-kee/typesafe-is#readme",
   "devDependencies": {
-    "@types/jest": "^23.3.9",
+    "@types/jest": "^24.0.13",
     "copy": "^0.3.2",
-    "coveralls": "^3.0.2",
-    "jest": "^23.6.0",
+    "coveralls": "^3.0.4",
+    "jest": "^24.8.0",
     "prettier": "^1.15.2",
     "rimraf": "^2.6.2",
-    "ts-jest": "^23.10.5",
-    "tslint": "^5.11.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
     "typescript": "^3.1.6"
   },
   "jest": {
