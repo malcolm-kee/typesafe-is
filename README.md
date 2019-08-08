@@ -39,40 +39,14 @@ yarn add typesafe-is
 
 ## API
 
-Each of the function below can be imported with one of the following statements:
+All functions can be imported with one of the following statements:
 
 ```ts
 import { isNil } from 'typesafe-is'; // this works
-import isNil from 'typesafe-is/isNil'; // this works too!
+const { isNil } = require('typesafe-is'); // this works too
 ```
 
-### `isDefined`
-
-Check if the value is **not** `undefined`.
-
-### `isNil`
-
-Check if the value is `undefined` or `null`.
-
-### `isString`
-
-Check if the value is a `string`.
-
-### `isFilledString`
-
-Check if the value is a `string` and is not empty string (`""`).
-
-### `isNumber`
-
-Check if the value is a `number`.
-
-### `isFunction`
-
-Check if the value is a `function`.
-
-### `isArray`
-
-Check if the value is an `Array`.
+See [here](https://typesafe-is.netlify.com/modules/_index_.html) for full list of available typechecking functions.
 
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
