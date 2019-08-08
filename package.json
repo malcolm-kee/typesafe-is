@@ -17,7 +17,8 @@
     "start": "tsdx watch",
     "test": "tsdx test",
     "test:ci": "tsdx test --coverage --coverageReporters=text-lcov | coveralls",
-    "build": "tsdx build"
+    "build": "tsdx build",
+    "docs": "typedoc --out docs --mode modules"
   },
   "author": "Malcolm Kee <malcolm.keeweesiong@gmail.com>",
   "license": "MIT",
@@ -42,6 +43,7 @@
     "pretty-quick": "^1.11.1",
     "tsdx": "^0.7.2",
     "tslib": "^1.10.0",
+    "typedoc": "^0.15.0",
     "typescript": "^3.5.3"
   }
 }
