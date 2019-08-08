@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/malcolm-kee/typesafe-is/issues"
   },
-  "homepage": "https://github.com/malcolm-kee/typesafe-is#readme",
+  "homepage": "https://typesafe-is.netlify.com/",
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
