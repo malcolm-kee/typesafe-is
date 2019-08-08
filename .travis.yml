@@ -5,8 +5,6 @@ cache:
   yarn: true
   directories:
     - node_modules
-before_deploy:
-  - cd dist
 script:
   - yarn test:ci
   - yarn build

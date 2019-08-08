@@ -1,20 +1,23 @@
 {
   "name": "typesafe-is",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Check the type of a value with typescript typeguard",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/typesafe-is.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "typescript",
     "typecheck",
     "type guard"
   ],
   "scripts": {
-    "test": "jest",
-    "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
-    "prebuild": "rimraf dist",
-    "copy": "copy package.json dist && copy README.md dist",
-    "compile": "tsc --p tsconfig.json",
-    "build": "npm run compile && npm run copy"
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "test:ci": "tsdx test --coverage --coverageReporters=text-lcov | coveralls",
+    "build": "tsdx build"
   },
   "author": "Malcolm Kee <malcolm.keeweesiong@gmail.com>",
   "license": "MIT",
@@ -26,32 +29,19 @@
     "url": "https://github.com/malcolm-kee/typesafe-is/issues"
   },
   "homepage": "https://github.com/malcolm-kee/typesafe-is#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "devDependencies": {
     "@types/jest": "^24.0.13",
-    "copy": "^0.3.2",
     "coveralls": "^3.0.4",
-    "jest": "^24.8.0",
-    "prettier": "^1.15.2",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.17.0",
-    "typescript": "^3.1.6"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.ts$": "ts-jest"
-    },
-    "testRegex": "test/.*.(tsx?|jsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.ts"
-    ]
+    "husky": "^3.0.3",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "tsdx": "^0.7.2",
+    "tslib": "^1.10.0",
+    "typescript": "^3.5.3"
   }
 }
